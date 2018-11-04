@@ -12,6 +12,23 @@ public class Path : MonoBehaviour {
         nodes = GetComponentsInChildren<Transform>();
     }
 
+    public Vector3 LinearPosition(int seg, float ratio)
+    {
+        Vector3 p1 = nodes[seg].position;
+        Vector3 p2 = nodes[seg + 1].position;
+
+        return Vector3.Lerp(p1 ,p2 ,ratio);
+    }
+
+    public Quaternion Orientation(int seg, float ratio)
+    {
+        Quaternion q1 = nodes[seg].rotation;
+        Quaternion q2 = nodes[seg + 1].rotation;
+
+        return Quaternion.Lerp(q1, q2, ratio);
+    }
+    //public Vector3 CatmullPosition(int seg, float ratio);
+
     private void OnDrawGizmos() //each frame camera is moving in scene view
     {
         for (int i = 0; i < nodes.Length - 1; i++)
