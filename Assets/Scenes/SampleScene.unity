@@ -225,6 +225,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e188a37201679419a1dbe5611386b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 95634646}
+  - {fileID: 1231305906}
+  - {fileID: 1483398934}
+  - {fileID: 926965199}
+  - {fileID: 112729872}
+  - {fileID: 497125343}
 --- !u!4 &95634646
 Transform:
   m_ObjectHideFlags: 0
@@ -268,7 +275,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112729871}
   m_LocalRotation: {x: -0, y: 0.71821165, z: -0, w: 0.69582474}
-  m_LocalPosition: {x: 40.1, y: 5.319236, z: -8.3}
+  m_LocalPosition: {x: 39.29, y: 5.319236, z: -8.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95634646}
@@ -2134,7 +2141,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1231305905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00022935867, y: 5.319236, z: 2.5744967}
+  m_LocalPosition: {x: 0.31, y: 5.319236, z: 2.5744967}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95634646}
@@ -2267,7 +2274,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1461283268}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc5e9b9173ca0104b92d6eeb0b599c86, type: 3}
   m_Name: 
@@ -2961,10 +2968,10 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 20
-  m_Range: 8
-  m_SpotAngle: 51
+  m_Color: {r: 0.764151, g: 0.736384, b: 0.58753115, a: 1}
+  m_Intensity: 3
+  m_Range: 27.79758
+  m_SpotAngle: 55
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0

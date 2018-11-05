@@ -5,7 +5,7 @@ using UnityEditor;
 [ExecuteInEditMode]
 public class Path : MonoBehaviour {
 
-    private Transform[] nodes;
+    public Transform[] nodes;
 
     private void Start()
     {
@@ -27,7 +27,6 @@ public class Path : MonoBehaviour {
 
         return Quaternion.Lerp(q1, q2, ratio);
     }
-    //public Vector3 CatmullPosition(int seg, float ratio);
 
     private void OnDrawGizmos() //each frame camera is moving in scene view
     {

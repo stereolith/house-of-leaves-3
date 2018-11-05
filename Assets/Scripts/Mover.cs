@@ -6,8 +6,8 @@ public class Mover : MonoBehaviour {
 
     public Path path;
 
-    private int currentSeg; //Current segment (between nodes)
-    private float transition; //progression in segment (0-1)
+    private int currentTargetNode = 0;
+    private float speed = 5;
     private bool isCompleted;
 
     private void Update()
@@ -20,14 +20,15 @@ public class Mover : MonoBehaviour {
 
     private void Play()
     {
-        transition += Time.deltaTime * 1 / 2.5f;
-        if (transition > 1)
-        {
-            transition = 0;
-            currentSeg++;
-        }
+        Debug.Log(currentTargetNode);
 
-        transform.position = path.LinearPosition(currentSeg, transition);
-        transform.rotation = path.Orientation(currentSeg, transition);
+        Debug.Log(path.nodes[currentTargetNode].position);
+        float step = speed * Time.deltaTime;
+
+        if (transform.position == path.nodes[currentTargetNode].position) currentTargetNode++;
+
+        transform.position = Vector3.MoveTowards(transform.position, path.nodes[currentTargetNode].position, step);
+
+        //transform.rotation = path.Orientation(currentTargetNode, step);
     }
 }
