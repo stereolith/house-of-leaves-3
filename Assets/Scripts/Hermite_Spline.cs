@@ -4,7 +4,6 @@ using UnityEngine;
 [ExecuteInEditMode, RequireComponent(typeof(LineRenderer))]
 public class Hermite_Spline : MonoBehaviour
 {
-    //public List<GameObject> controlPoints = new List<GameObject>();
     List<Transform> controlPoints;
     public Color color = Color.white;
     public float width = 0.2f;
@@ -12,24 +11,30 @@ public class Hermite_Spline : MonoBehaviour
     LineRenderer lineRenderer;
 
     public List<Vector3> nodes = new List<Vector3>();
-    public List<Quaternion> nodesRotation = new List<Quaternion>();
 
     //rotation interpolation
-    public Quaternion Orientation(int seg, float ratio)
+    /*public Quaternion Orientation(int seg, float ratio)
     {
-        
         Quaternion q1 = nodesRotation[seg];
         Quaternion q2 = nodesRotation[seg + 1];
 
         return Quaternion.Lerp(q1, q2, ratio);
-    }
+    }*/
 
     void Start()
+    {
+
+
+
+    }
+
+    public void OnDrawGizmos()
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.useWorldSpace = true;
         lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
 
+        nodes.Clear();
 
         List<Transform> controlPoints = new List<Transform>();
         GetComponentsInChildren<Transform>(false, controlPoints);
@@ -106,19 +111,8 @@ public class Hermite_Spline : MonoBehaviour
                 lineRenderer.SetPosition(i + j * numberOfPoints,
                     position);
                 nodes.Add(position);
-                if (nodes.Count == 0)
-                {
-                    nodesRotation.Add(new Quaternion());
-                } else {
-                    Quaternion rot = new Quaternion();
-                    rot.SetLookRotation(position, Vector3.up);
-                    nodesRotation.Add(rot);
-                }
-                prevPosition = position;
             }
         }
-
-
     }
 
     void Update()
