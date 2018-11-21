@@ -5,83 +5,52 @@ using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour {
 
-    public Image progressCircle;
-
-    public float timeToSelect = 1000f;
-    public float regainHitTimeout = 50f;
     public int walkSpeed = 5;
-    private float regainHitCountdown;
-    private bool selecting;
-    private float timeOnTarget = 0f;
     private Transform target = null;
     private bool isWalking = false;
+    private Animator animator;
+    private LookSelect lookSelect;
 
     void Awake()
     {
-        regainHitCountdown = regainHitTimeout;
+        animator = GetComponent<Animator>();
+        lookSelect = GetComponent<LookSelect>();
     }
 
     void Update()
     {
         if(!isWalking)
         {
-            RaycastSelect();
+            GameObject hit = lookSelect.RaycastSelect();
+            if(hit != null)
+            {
+                animator.Play("Walk");
+                target = hit.transform;
+                isWalking = true;
+            }
         }
         else
         {
-            WalkTo();
+            isWalking = WalkTo();
         }
         
     }
-
-    void RaycastSelect()
-    {
-        RaycastHit hit;
-        Ray lookRay = new Ray(transform.position, transform.forward);
-
-        if (Physics.Raycast(lookRay, out hit))
-        {
-            if (hit.collider.tag == "moveTarget")
-            {
-                selecting = true;
-                regainHitCountdown = regainHitTimeout;
-                timeOnTarget += Time.deltaTime;
-                UpdateProgressCircle();
-                if (timeOnTarget >= timeToSelect)
-                {
-                    Debug.Log("Succesfully selected!!");
-                    target = hit.transform;
-                    isWalking = true;
-                    selecting = false;
-                    timeOnTarget = 0f;
-                }
-            }
-            else if (selecting)
-            {
-                regainHitCountdown -= Time.deltaTime;
-                if (regainHitCountdown <= 0)
-                {
-                    selecting = false;
-                    regainHitCountdown = regainHitTimeout;
-                    timeOnTarget = 0f;
-                    UpdateProgressCircle();
-                    Debug.Log("sorry, Timeout!");
-                }
-            }
-        }
-    }
-
-    void UpdateProgressCircle()
-    {
-        progressCircle.fillAmount = timeOnTarget / timeToSelect;
-    }
-
-    void WalkTo()
+    
+    bool WalkTo() //returns false if target is reached
     {
         float moveStep = walkSpeed * Time.deltaTime;
         Vector3 targetPos = target.position;
         targetPos.y = transform.parent.position.y;
         transform.parent.position = Vector3.MoveTowards(transform.parent.position, targetPos, moveStep);
+        if (transform.parent.position == targetPos)
+        {
+            animator.Play("Idle");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
 
     }
 
