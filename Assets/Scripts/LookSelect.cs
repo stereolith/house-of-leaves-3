@@ -26,7 +26,7 @@ public class LookSelect : MonoBehaviour {
             regainHitCountdown = regainHitTimeout;
             timeOnTarget += Time.deltaTime;
             targetParticles = hit.transform.gameObject.GetComponent<ParticleSystem>();
-            UpdateProgress();
+            UpdateProgressCircle();
             if (timeOnTarget >= timeToSelect)
             {
                 Debug.Log("Succesfully selected!!");
@@ -43,7 +43,7 @@ public class LookSelect : MonoBehaviour {
                 selecting = false;
                 regainHitCountdown = regainHitTimeout;
                 timeOnTarget = 0f;
-                UpdateProgress();
+                UpdateProgressCircle();
                 targetParticles = null;
                 Debug.Log("sorry, Timeout!");
 
