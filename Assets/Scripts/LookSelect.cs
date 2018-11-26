@@ -20,7 +20,7 @@ public class LookSelect : MonoBehaviour {
         RaycastHit hit;
         Ray lookRay = new Ray(transform.position, transform.forward);
 
-        if (Physics.Raycast(lookRay, out hit) && hit.collider.tag == "moveTarget") //raycast hit moveTarget target
+        if (Physics.Raycast(lookRay, out hit) && hit.collider.tag == "moveTarget" && !hit.collider.bounds.Contains(transform.position)) //raycast hit moveTarget target
         {
             selecting = true;
             regainHitCountdown = regainHitTimeout;
@@ -32,6 +32,7 @@ public class LookSelect : MonoBehaviour {
                 Debug.Log("Succesfully selected!!");
                 selecting = false;
                 timeOnTarget = 0f;
+                UpdateProgressCircle();
                 return hit.transform.gameObject;
             }
         }
