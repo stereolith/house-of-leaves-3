@@ -13,7 +13,6 @@ public class LookSelect : MonoBehaviour {
     private bool selecting = false;
     private float timeOnTarget = 0f;
     private Animator animator;
-    private ParticleSystem targetParticles = null;
 
     public GameObject RaycastSelect()
     {
@@ -25,7 +24,6 @@ public class LookSelect : MonoBehaviour {
             selecting = true;
             regainHitCountdown = regainHitTimeout;
             timeOnTarget += Time.deltaTime;
-            targetParticles = hit.transform.gameObject.GetComponent<ParticleSystem>();
             UpdateProgressCircle();
             if (timeOnTarget >= timeToSelect)
             {
@@ -33,6 +31,7 @@ public class LookSelect : MonoBehaviour {
                 selecting = false;
                 timeOnTarget = 0f;
                 UpdateProgressCircle();
+                StopEmission(hit);
                 return hit.transform.gameObject;
             }
         }
@@ -45,7 +44,6 @@ public class LookSelect : MonoBehaviour {
                 regainHitCountdown = regainHitTimeout;
                 timeOnTarget = 0f;
                 UpdateProgressCircle();
-                targetParticles = null;
                 Debug.Log("sorry, Timeout!");
 
             }
@@ -53,7 +51,15 @@ public class LookSelect : MonoBehaviour {
         return null;
     }
 
-    void UpdateProgress()
+    void StopEmission(RaycastHit hit)
+    {
+        //Stop Particle Emission at target
+        ParticleSystem targetParticles = hit.transform.GetComponent<ParticleSystem>();
+        var emission = targetParticles.emission;
+        emission.rateOverTime = 0;
+    }
+
+    /*void UpdateProgress() //Manipulate emission/lifetime/speed at lookselect
     {
         float ease = CircularEaseOut(timeOnTarget / timeToSelect);
 
@@ -67,7 +73,7 @@ public class LookSelect : MonoBehaviour {
         emission.rate = rate;
         main.startLifetime = startLifetime;
         main.startSpeed = startSpeed;
-    }
+    }*/
     void UpdateProgressCircle()
     {
         progressCircle.fillAmount = timeOnTarget / timeToSelect;
