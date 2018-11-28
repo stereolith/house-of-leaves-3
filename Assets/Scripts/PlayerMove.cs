@@ -32,6 +32,15 @@ public class PlayerMove : MonoBehaviour {
         else
         {
             isWalking = WalkTo();
+            if(!isWalking) //Check for teleport target
+            {
+                Transform teleportTarget = target.GetComponent<WalkTarget>().GetTarget();
+                if (teleportTarget != null)
+                {
+                    Debug.Log(teleportTarget.position);
+                    transform.parent.position = teleportTarget.position;
+                }
+            }
         }
         
     }
