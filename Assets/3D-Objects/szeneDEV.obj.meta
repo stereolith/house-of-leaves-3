@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: ae6d7cd4cb662824caccc47f758d438b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Decke
+    100002: FixedWindow002
+    100004: FixedWindow003
+    100006: FixedWindow004
+    100008: FixedWindow005
+    100010: FixedWindow006
+    100012: PlatteVerdecktOeffnung
+    100014: ProjectedWindow001
+    100016: //RootNode
+    100018: TuerPlatte
+    100020: TuerPlatte1
+    100022: TuerPlatte2
+    100024: TuerRahmen
+    100026: TuerRahmen1
+    100028: TuerRahmen2
+    100030: TurmGross1
+    100032: TurmGross2
+    100034: TurmKlein
+    100036: WendeltreppeLiegend
+    100038: WendeltreppeStehend
+    400000: Decke
+    400002: FixedWindow002
+    400004: FixedWindow003
+    400006: FixedWindow004
+    400008: FixedWindow005
+    400010: FixedWindow006
+    400012: PlatteVerdecktOeffnung
+    400014: ProjectedWindow001
+    400016: //RootNode
+    400018: TuerPlatte
+    400020: TuerPlatte1
+    400022: TuerPlatte2
+    400024: TuerRahmen
+    400026: TuerRahmen1
+    400028: TuerRahmen2
+    400030: TurmGross1
+    400032: TurmGross2
+    400034: TurmKlein
+    400036: WendeltreppeLiegend
+    400038: WendeltreppeStehend
+    2100000: DeckeMat
+    2100002: FixedWindow002Mat
+    2100004: FixedWindow003Mat
+    2100006: FixedWindow004Mat
+    2100008: FixedWindow005Mat
+    2100010: FixedWindow006Mat
+    2100012: PlatteVerdecktOeffnungMat
+    2100014: ProjectedWindow001Mat
+    2100016: TuerPlatteMat
+    2100018: TuerPlatte1Mat
+    2100020: TuerPlatte2Mat
+    2100022: TuerRahmenMat
+    2100024: TuerRahmen1Mat
+    2100026: TuerRahmen2Mat
+    2100028: TurmGross1Mat
+    2100030: TurmGross2Mat
+    2100032: TurmKleinMat
+    2100034: WendeltreppeLiegendMat
+    2100036: WendeltreppeStehendMat
+    2300000: Decke
+    2300002: FixedWindow002
+    2300004: FixedWindow003
+    2300006: FixedWindow004
+    2300008: FixedWindow005
+    2300010: FixedWindow006
+    2300012: PlatteVerdecktOeffnung
+    2300014: ProjectedWindow001
+    2300016: TuerPlatte
+    2300018: TuerPlatte1
+    2300020: TuerPlatte2
+    2300022: TuerRahmen
+    2300024: TuerRahmen1
+    2300026: TuerRahmen2
+    2300028: TurmGross1
+    2300030: TurmGross2
+    2300032: TurmKlein
+    2300034: WendeltreppeLiegend
+    2300036: WendeltreppeStehend
+    3300000: Decke
+    3300002: FixedWindow002
+    3300004: FixedWindow003
+    3300006: FixedWindow004
+    3300008: FixedWindow005
+    3300010: FixedWindow006
+    3300012: PlatteVerdecktOeffnung
+    3300014: ProjectedWindow001
+    3300016: TuerPlatte
+    3300018: TuerPlatte1
+    3300020: TuerPlatte2
+    3300022: TuerRahmen
+    3300024: TuerRahmen1
+    3300026: TuerRahmen2
+    3300028: TurmGross1
+    3300030: TurmGross2
+    3300032: TurmKlein
+    3300034: WendeltreppeLiegend
+    3300036: WendeltreppeStehend
+    4300000: Decke
+    4300002: FixedWindow002
+    4300004: FixedWindow003
+    4300006: FixedWindow004
+    4300008: FixedWindow005
+    4300010: FixedWindow006
+    4300012: PlatteVerdecktOeffnung
+    4300014: ProjectedWindow001
+    4300016: TuerPlatte
+    4300018: TuerPlatte1
+    4300020: TuerPlatte2
+    4300022: TuerRahmen
+    4300024: TuerRahmen1
+    4300026: TuerRahmen2
+    4300028: TurmGross1
+    4300030: TurmGross2
+    4300032: TurmKlein
+    4300034: WendeltreppeLiegend
+    4300036: WendeltreppeStehend
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
