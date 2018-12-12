@@ -76,6 +76,7 @@ public class LookSelect : MonoBehaviour {
     }*/
     void UpdateProgressCircle()
     {
+        Debug.Log(progressCircle.fillAmount);
         progressCircle.fillAmount = timeOnTarget / timeToSelect;
     }
 
