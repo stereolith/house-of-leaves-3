@@ -37,7 +37,6 @@ public class PlayerMove : MonoBehaviour {
                 Transform teleportTarget = target.GetComponent<WalkTarget>().GetTarget();
                 if (teleportTarget != null)
                 {
-                    Debug.Log(teleportTarget.position);
                     transform.parent.position = teleportTarget.position;
                 }
             }
