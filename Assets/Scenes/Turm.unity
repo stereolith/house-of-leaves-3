@@ -188,15 +188,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 171080038}
-  - component: {fileID: 171080037}
   - component: {fileID: 171080036}
   m_Layer: 0
-  m_Name: LevelChanger 1
+  m_Name: LevelChanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &171080036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,26 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb09ed5c9469a5949a27cb06e304103a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 171080037}
---- !u!95 &171080037
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 95887562018117414, guid: 10b808f7a9b048644bdae4c136521c31,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 171080035}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2a1a5c560c57d2441b77422d83de554c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  an_top: {fileID: 1737936769}
+  an_bot: {fileID: 800544739}
 --- !u!4 &171080038
 Transform:
   m_ObjectHideFlags: 0
@@ -324,7 +305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.875, y: 310}
+  m_AnchoredPosition: {x: -33.875, y: 543}
   m_SizeDelta: {x: 2044.6, y: 622.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800544737
@@ -346,7 +327,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 387565886f355a74394c403fed38a4f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -672,6 +653,7 @@ GameObject:
   - component: {fileID: 1737936771}
   - component: {fileID: 1737936770}
   - component: {fileID: 1737936769}
+  - component: {fileID: 1737936768}
   m_Layer: 5
   m_Name: bottom
   m_TagString: Untagged
@@ -694,9 +676,21 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31.9, y: -278}
+  m_AnchoredPosition: {x: -31.9, y: -364}
   m_SizeDelta: {x: 2048.5, y: 565.7}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1737936768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737936766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de0e58507acb054bb641f7626199616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changer: {fileID: 171080035}
 --- !u!95 &1737936769
 Animator:
   serializedVersion: 3
@@ -727,14 +721,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.009433985, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: dde7c7bf4629d1c4783d8a345db2d12b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

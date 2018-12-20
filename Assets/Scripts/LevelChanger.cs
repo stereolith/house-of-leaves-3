@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelChanger : MonoBehaviour {
 
-    public Animator animator;
+    public Animator an_top;
+    public Animator an_bot;
 
     private int levelToLoad;
 
@@ -13,7 +14,7 @@ public class LevelChanger : MonoBehaviour {
     {
         if(Input.GetMouseButtonDown(0))
         {
-            FadeToLevel(1);
+            FadeToLevel(0);
         }
     }
 	
@@ -25,7 +26,8 @@ public class LevelChanger : MonoBehaviour {
     public void FadeToLevel(int levelIndex)
     {
         levelToLoad = levelIndex;
-        animator.SetTrigger("FadeOut");
+        an_bot.SetTrigger("close");
+        an_top.SetTrigger("close");
     }  
     public void OnFadeComplete()
     {
