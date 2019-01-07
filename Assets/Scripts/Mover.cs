@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mover : MonoBehaviour {
+public class Mover : MonoBehaviour
+{
 
     public Hermite_Spline spline;
 
     private int currentTargetNode = 1;
-    private float moveSpeed = 5;
-    private float rotateSpeed = 3;
-    private int rotateEvery = 5;
+    public float moveSpeed = 50;
+    public float rotateSpeed = 6;
+    public int rotateEvery = 5;
     private bool isCompleted;
     private float transition;
 
     Vector3 newDir;
+
+    private void Awake()
+    {
+        transform.position = spline.nodes[0];
+    }
 
     private void Update()
     {
