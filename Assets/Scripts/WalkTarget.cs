@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WalkTarget : MonoBehaviour {
-
     public Transform teleportTarget = null;
     public Hermite_Spline bike_path = null;
     public GameObject bike = null;
