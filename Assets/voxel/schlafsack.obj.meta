@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 818ca50e0eb0a934aa148e0dbe1678be
+guid: 44c4494644ed5e64785e475473087e26
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: LineTEST
+    100000: schlafsack
     100002: //RootNode
-    400000: LineTEST
+    400000: schlafsack
     400002: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: WendeltreppeStehendTEST
+    2100000: schlafsackMat
+    2300000: schlafsack
+    3300000: schlafsack
+    4300000: schlafsack
   externalObjects: {}
   materials:
     importMaterials: 1

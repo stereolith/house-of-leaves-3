@@ -1,21 +1,16 @@
 fileFormatVersion: 2
-guid: cb616ea870219b340b44ef520b30e89d
+guid: e8b7e71f31375744e81099ec34f3756f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: TuerPlatte
-    100004: TuerRahmen
-    400000: //RootNode
-    400002: TuerPlatte
-    400004: TuerRahmen
-    2100000: No Name
-    2300000: TuerPlatte
-    2300002: TuerRahmen
-    3300000: TuerPlatte
-    3300002: TuerRahmen
-    4300000: TuerRahmen
-    4300002: TuerPlatte
+    100000: anhaenger
+    100002: //RootNode
+    400000: anhaenger
+    400002: //RootNode
+    2100000: anhaengerMat
+    2300000: anhaenger
+    3300000: anhaenger
+    4300000: anhaenger
   externalObjects: {}
   materials:
     importMaterials: 1

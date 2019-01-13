@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-guid: f1d739b103cc6e24bbb290581279bf1d
+guid: 942ee907a026249428371e856836dfc9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: WendeltreppeStehend
+    100000: rucksack
+    100002: //RootNode
+    400000: rucksack
+    400002: //RootNode
+    2100000: rucksackMat
+    2300000: rucksack
+    3300000: rucksack
+    4300000: rucksack
   externalObjects: {}
   materials:
     importMaterials: 1

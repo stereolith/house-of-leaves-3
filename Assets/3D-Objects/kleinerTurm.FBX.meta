@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 108e6abcc9487264ea188e6887c9bd0d
+guid: 18bcd85f61a8e8d41b3d0a81e3968c98
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -15,20 +15,18 @@ ModelImporter:
     100018: Glas 6
     100020: Glas 7
     100022: Glas 8
-    100024: Mitte
-    100026: Mitte 1
-    100028: Mitte 2
-    100030: Oben
-    100032: Oben 1
-    100034: Oben 2
-    100036: TuerPlatte
-    100038: TuerRahmen
-    100040: TurmDeckel
-    100042: //RootNode
-    100044: TurmSpitze
-    100046: Unten
-    100048: Unten 1
-    100050: Unten 2
+    100024: //RootNode
+    100026: Mitte
+    100028: Mitte 1
+    100030: Mitte 2
+    100032: Oben
+    100034: Oben 1
+    100036: Oben 2
+    100038: Tuer
+    100040: TuerPlatte
+    100042: Unten
+    100044: Unten 1
+    100046: Unten 2
     400000: FensterLinks
     400002: FensterRechts
     400004: FensterVorne
@@ -41,20 +39,18 @@ ModelImporter:
     400018: Glas 6
     400020: Glas 7
     400022: Glas 8
-    400024: Mitte
-    400026: Mitte 1
-    400028: Mitte 2
-    400030: Oben
-    400032: Oben 1
-    400034: Oben 2
-    400036: TuerPlatte
-    400038: TuerRahmen
-    400040: TurmDeckel
-    400042: //RootNode
-    400044: TurmSpitze
-    400046: Unten
-    400048: Unten 1
-    400050: Unten 2
+    400024: //RootNode
+    400026: Mitte
+    400028: Mitte 1
+    400030: Mitte 2
+    400032: Oben
+    400034: Oben 1
+    400036: Oben 2
+    400038: Tuer
+    400040: TuerPlatte
+    400042: Unten
+    400044: Unten 1
+    400046: Unten 2
     2100000: No Name
     2300000: FensterLinks
     2300002: FensterRechts
@@ -68,20 +64,18 @@ ModelImporter:
     2300018: Glas 6
     2300020: Glas 7
     2300022: Glas 8
-    2300024: Mitte
-    2300026: Mitte 1
-    2300028: Mitte 2
-    2300030: Oben
-    2300032: Oben 1
-    2300034: Oben 2
-    2300036: TuerPlatte
-    2300038: TuerRahmen
-    2300040: TurmDeckel
-    2300042: //RootNode
-    2300044: TurmSpitze
-    2300046: Unten
-    2300048: Unten 1
-    2300050: Unten 2
+    2300024: //RootNode
+    2300026: Mitte
+    2300028: Mitte 1
+    2300030: Mitte 2
+    2300032: Oben
+    2300034: Oben 1
+    2300036: Oben 2
+    2300038: Tuer
+    2300040: TuerPlatte
+    2300042: Unten
+    2300044: Unten 1
+    2300046: Unten 2
     3300000: FensterLinks
     3300002: FensterRechts
     3300004: FensterVorne
@@ -94,46 +88,42 @@ ModelImporter:
     3300018: Glas 6
     3300020: Glas 7
     3300022: Glas 8
-    3300024: Mitte
-    3300026: Mitte 1
-    3300028: Mitte 2
-    3300030: Oben
-    3300032: Oben 1
-    3300034: Oben 2
-    3300036: TuerPlatte
-    3300038: TuerRahmen
-    3300040: TurmDeckel
-    3300042: //RootNode
-    3300044: TurmSpitze
-    3300046: Unten
-    3300048: Unten 1
-    3300050: Unten 2
-    4300000: TurmKlein
-    4300002: TurmSpitze
-    4300004: TuerRahmen
-    4300006: TuerPlatte
-    4300008: TurmDeckel
-    4300010: FensterVorne
+    3300024: //RootNode
+    3300026: Mitte
+    3300028: Mitte 1
+    3300030: Mitte 2
+    3300032: Oben
+    3300034: Oben 1
+    3300036: Oben 2
+    3300038: Tuer
+    3300040: TuerPlatte
+    3300042: Unten
+    3300044: Unten 1
+    3300046: Unten 2
+    4300000: Turm
+    4300002: FensterLinks
+    4300004: Mitte
+    4300006: Glas
+    4300008: Oben
+    4300010: Glas
     4300012: Unten
     4300014: Glas
-    4300016: Mitte
-    4300018: Glas
-    4300020: Oben
-    4300022: Glas
-    4300024: FensterLinks
-    4300026: Oben
+    4300016: FensterRechts
+    4300018: Unten
+    4300020: Glas
+    4300022: Oben
+    4300024: Glas
+    4300026: Mitte
     4300028: Glas
-    4300030: Mitte
-    4300032: Glas
-    4300034: Unten
-    4300036: Glas
-    4300038: FensterRechts
-    4300040: Mitte
+    4300030: FensterVorne
+    4300032: Oben
+    4300034: Glas
+    4300036: Mitte
+    4300038: Glas
+    4300040: Unten
     4300042: Glas
-    4300044: Oben
-    4300046: Glas
-    4300048: Unten
-    4300050: Glas
+    4300044: Tuer
+    4300046: TuerPlatte
   externalObjects: {}
   materials:
     importMaterials: 1
