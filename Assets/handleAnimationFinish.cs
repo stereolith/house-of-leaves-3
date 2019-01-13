@@ -16,6 +16,6 @@ public class handleAnimationFinish : MonoBehaviour {
 
     public void finishFadeIn()
     {
-
+       
     }
 }

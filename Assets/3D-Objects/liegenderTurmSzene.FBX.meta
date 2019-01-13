@@ -1,0 +1,440 @@
+fileFormatVersion: 2
+guid: f56440e1452e45e4194e493f598f0b49
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Boden
+    100002: BodenDeckel
+    100004: Decke
+    100006: Decke 1
+    100008: Decke 2
+    100010: FensterLinks
+    100012: FensterRechts
+    100014: Gang
+    100016: Glas
+    100018: Glas 1
+    100020: Glas 2
+    100022: Glas 3
+    100024: Glas 4
+    100026: Glas 5
+    100028: KleinerRaumBoden
+    100030: //RootNode
+    100032: Mitte
+    100034: Mitte 1
+    100036: Oben
+    100038: Oben 1
+    100040: Rueckwand
+    100042: RunderRaum
+    100044: RunderRaumBoden
+    100046: Schacht
+    100048: SchachtOeffnung
+    100050: Sprosse1
+    100052: Sprosse10
+    100054: Sprosse11
+    100056: Sprosse12
+    100058: Sprosse13
+    100060: Sprosse14
+    100062: Sprosse15
+    100064: Sprosse16
+    100066: Sprosse17
+    100068: Sprosse18
+    100070: Sprosse19
+    100072: Sprosse2
+    100074: Sprosse20
+    100076: Sprosse21
+    100078: Sprosse22
+    100080: Sprosse23
+    100082: Sprosse24
+    100084: Sprosse25
+    100086: Sprosse26
+    100088: Sprosse27
+    100090: Sprosse28
+    100092: Sprosse29
+    100094: Sprosse3
+    100096: Sprosse30
+    100098: Sprosse31
+    100100: Sprosse32
+    100102: Sprosse4
+    100104: Sprosse5
+    100106: Sprosse6
+    100108: Sprosse7
+    100110: Sprosse8
+    100112: Sprosse9
+    100114: SprossenSchacht
+    100116: Tuer
+    100118: TuerPlatte
+    100120: "TurmGro\xDFLiegend"
+    100122: Unten
+    100124: Unten 1
+    100126: WandEnde
+    100128: WandHinten
+    100130: WandL
+    100132: WandLinks
+    100134: WandR
+    100136: WandRechts
+    100138: WandTuer
+    100140: WendeltreppeStehend
+    400000: Boden
+    400002: BodenDeckel
+    400004: Decke
+    400006: Decke 1
+    400008: Decke 2
+    400010: FensterLinks
+    400012: FensterRechts
+    400014: Gang
+    400016: Glas
+    400018: Glas 1
+    400020: Glas 2
+    400022: Glas 3
+    400024: Glas 4
+    400026: Glas 5
+    400028: KleinerRaumBoden
+    400030: //RootNode
+    400032: Mitte
+    400034: Mitte 1
+    400036: Oben
+    400038: Oben 1
+    400040: Rueckwand
+    400042: RunderRaum
+    400044: RunderRaumBoden
+    400046: Schacht
+    400048: SchachtOeffnung
+    400050: Sprosse1
+    400052: Sprosse10
+    400054: Sprosse11
+    400056: Sprosse12
+    400058: Sprosse13
+    400060: Sprosse14
+    400062: Sprosse15
+    400064: Sprosse16
+    400066: Sprosse17
+    400068: Sprosse18
+    400070: Sprosse19
+    400072: Sprosse2
+    400074: Sprosse20
+    400076: Sprosse21
+    400078: Sprosse22
+    400080: Sprosse23
+    400082: Sprosse24
+    400084: Sprosse25
+    400086: Sprosse26
+    400088: Sprosse27
+    400090: Sprosse28
+    400092: Sprosse29
+    400094: Sprosse3
+    400096: Sprosse30
+    400098: Sprosse31
+    400100: Sprosse32
+    400102: Sprosse4
+    400104: Sprosse5
+    400106: Sprosse6
+    400108: Sprosse7
+    400110: Sprosse8
+    400112: Sprosse9
+    400114: SprossenSchacht
+    400116: Tuer
+    400118: TuerPlatte
+    400120: "TurmGro\xDFLiegend"
+    400122: Unten
+    400124: Unten 1
+    400126: WandEnde
+    400128: WandHinten
+    400130: WandL
+    400132: WandLinks
+    400134: WandR
+    400136: WandRechts
+    400138: WandTuer
+    400140: WendeltreppeStehend
+    2100000: No Name
+    2300000: Boden
+    2300002: BodenDeckel
+    2300004: Decke
+    2300006: Decke 1
+    2300008: Decke 2
+    2300010: FensterLinks
+    2300012: FensterRechts
+    2300014: Gang
+    2300016: Glas
+    2300018: Glas 1
+    2300020: Glas 2
+    2300022: Glas 3
+    2300024: Glas 4
+    2300026: Glas 5
+    2300028: KleinerRaumBoden
+    2300030: Mitte
+    2300032: Mitte 1
+    2300034: Oben
+    2300036: Oben 1
+    2300038: Rueckwand
+    2300040: RunderRaum
+    2300042: RunderRaumBoden
+    2300044: Schacht
+    2300046: SchachtOeffnung
+    2300048: Sprosse1
+    2300050: Sprosse10
+    2300052: Sprosse11
+    2300054: Sprosse12
+    2300056: Sprosse13
+    2300058: Sprosse14
+    2300060: Sprosse15
+    2300062: Sprosse16
+    2300064: Sprosse17
+    2300066: Sprosse18
+    2300068: Sprosse19
+    2300070: Sprosse2
+    2300072: Sprosse20
+    2300074: Sprosse21
+    2300076: Sprosse22
+    2300078: Sprosse23
+    2300080: Sprosse24
+    2300082: Sprosse25
+    2300084: Sprosse26
+    2300086: Sprosse27
+    2300088: Sprosse28
+    2300090: Sprosse29
+    2300092: Sprosse3
+    2300094: Sprosse30
+    2300096: Sprosse31
+    2300098: Sprosse32
+    2300100: Sprosse4
+    2300102: Sprosse5
+    2300104: Sprosse6
+    2300106: Sprosse7
+    2300108: Sprosse8
+    2300110: Sprosse9
+    2300112: SprossenSchacht
+    2300114: Tuer
+    2300116: TuerPlatte
+    2300118: "TurmGro\xDFLiegend"
+    2300120: Unten
+    2300122: Unten 1
+    2300124: WandEnde
+    2300126: WandHinten
+    2300128: WandL
+    2300130: WandLinks
+    2300132: WandR
+    2300134: WandRechts
+    2300136: WandTuer
+    2300138: WendeltreppeStehend
+    3300000: Boden
+    3300002: BodenDeckel
+    3300004: Decke
+    3300006: Decke 1
+    3300008: Decke 2
+    3300010: FensterLinks
+    3300012: FensterRechts
+    3300014: Gang
+    3300016: Glas
+    3300018: Glas 1
+    3300020: Glas 2
+    3300022: Glas 3
+    3300024: Glas 4
+    3300026: Glas 5
+    3300028: KleinerRaumBoden
+    3300030: Mitte
+    3300032: Mitte 1
+    3300034: Oben
+    3300036: Oben 1
+    3300038: Rueckwand
+    3300040: RunderRaum
+    3300042: RunderRaumBoden
+    3300044: Schacht
+    3300046: SchachtOeffnung
+    3300048: Sprosse1
+    3300050: Sprosse10
+    3300052: Sprosse11
+    3300054: Sprosse12
+    3300056: Sprosse13
+    3300058: Sprosse14
+    3300060: Sprosse15
+    3300062: Sprosse16
+    3300064: Sprosse17
+    3300066: Sprosse18
+    3300068: Sprosse19
+    3300070: Sprosse2
+    3300072: Sprosse20
+    3300074: Sprosse21
+    3300076: Sprosse22
+    3300078: Sprosse23
+    3300080: Sprosse24
+    3300082: Sprosse25
+    3300084: Sprosse26
+    3300086: Sprosse27
+    3300088: Sprosse28
+    3300090: Sprosse29
+    3300092: Sprosse3
+    3300094: Sprosse30
+    3300096: Sprosse31
+    3300098: Sprosse32
+    3300100: Sprosse4
+    3300102: Sprosse5
+    3300104: Sprosse6
+    3300106: Sprosse7
+    3300108: Sprosse8
+    3300110: Sprosse9
+    3300112: SprossenSchacht
+    3300114: Tuer
+    3300116: TuerPlatte
+    3300118: "TurmGro\xDFLiegend"
+    3300120: Unten
+    3300122: Unten 1
+    3300124: WandEnde
+    3300126: WandHinten
+    3300128: WandL
+    3300130: WandLinks
+    3300132: WandR
+    3300134: WandRechts
+    3300136: WandTuer
+    3300138: WendeltreppeStehend
+    4300000: RunderRaum
+    4300002: Decke
+    4300004: SprossenSchacht
+    4300006: Sprosse1
+    4300008: Sprosse32
+    4300010: Sprosse31
+    4300012: Sprosse30
+    4300014: Sprosse29
+    4300016: Sprosse28
+    4300018: Sprosse27
+    4300020: Sprosse26
+    4300022: Sprosse25
+    4300024: Sprosse24
+    4300026: Sprosse23
+    4300028: Sprosse22
+    4300030: Sprosse21
+    4300032: Sprosse20
+    4300034: Sprosse19
+    4300036: Sprosse18
+    4300038: Sprosse17
+    4300040: Sprosse16
+    4300042: Sprosse15
+    4300044: Sprosse14
+    4300046: Sprosse13
+    4300048: Sprosse12
+    4300050: Sprosse2
+    4300052: Sprosse3
+    4300054: Sprosse4
+    4300056: Sprosse5
+    4300058: Sprosse6
+    4300060: Sprosse7
+    4300062: Sprosse8
+    4300064: Sprosse9
+    4300066: Sprosse10
+    4300068: Sprosse11
+    4300070: RunderRaumBoden
+    4300072: Schacht
+    4300074: SchachtOeffnung
+    4300076: WendeltreppeStehend
+    4300078: KleinerRaumBoden
+    4300080: Decke
+    4300082: BodenDeckel
+    4300084: WandHinten
+    4300086: WandLinks
+    4300088: WandTuer
+    4300090: Tuer
+    4300092: TuerPlatte
+    4300094: WandRechts
+    4300096: Gang
+    4300098: Decke
+    4300100: WandL
+    4300102: WandR
+    4300104: WandEnde
+    4300106: "TurmGro\xDFLiegend"
+    4300108: FensterRechts
+    4300110: Unten
+    4300112: Glas
+    4300114: Oben
+    4300116: Glas
+    4300118: Mitte
+    4300120: Glas
+    4300122: FensterLinks
+    4300124: Unten
+    4300126: Glas
+    4300128: Oben
+    4300130: Glas
+    4300132: Mitte
+    4300134: Glas
+    4300136: Rueckwand
+    4300138: Boden
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

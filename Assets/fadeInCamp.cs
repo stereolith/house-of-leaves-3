@@ -5,6 +5,7 @@ using UnityEngine;
 public class fadeInCamp : MonoBehaviour {
 
     private Animator[] animators;
+
     public Transform playerTransform;
 
     private Collider boxCollider;
@@ -37,5 +38,9 @@ public class fadeInCamp : MonoBehaviour {
         {
             animator.SetTrigger("fadeIn");
         }
+    }
+    public void setRenderMode()
+    {
+
     }
 }
