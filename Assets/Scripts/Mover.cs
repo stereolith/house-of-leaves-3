@@ -6,6 +6,7 @@ public class Mover : MonoBehaviour
 {
 
     public Hermite_Spline spline;
+    public bool moving = false;
 
     private int currentTargetNode = 1;
     public float moveSpeed = 50;
@@ -18,23 +19,35 @@ public class Mover : MonoBehaviour
 
     private void Awake()
     {
-        transform.position = spline.nodes[0];
+        //transform.position = spline.nodes[0];
     }
 
     private void Update()
     {
-        if (!spline)
+        if (!spline || !moving)
             return;
         if (!isCompleted)
         {
             Play();
         }
+    }
+
+    public void setMoving(bool mov)
+    {
+        moving = mov;
+    }
+
+    private void enableLookSelect()
+    {
 
     }
 
     private void Play()
     {
-
+        if(currentTargetNode == spline.nodes.Count)
+        {
+            spline = null;
+        }
         float moveStep = moveSpeed * Time.deltaTime;
         float rotateStep = rotateSpeed * Time.deltaTime;
 
@@ -47,25 +60,8 @@ public class Mover : MonoBehaviour
         if (transform.position == spline.nodes[currentTargetNode])
         {
             currentTargetNode++;
-
-            /*Vector3 direction = spline.nodes[currentTargetNode] - transform.position;
-            toRotation = Quaternion.FromToRotation(transform.position, spline.nodes[currentTargetNode]);
-            toRotation = transform.rotation * toRotation;
-            Debug.Log("toRotation");
-            Debug.Log(toRotation);
-            lastRotation = transform.rotation;
-            Debug.Log("lastRotation");
-            Debug.Log(lastRotation);*/
         }
 
-        //rotation
-        /*transition = 1 - Vector3.Distance(transform.position, spline.nodes[currentTargetNode]) / Vector3.Distance(spline.nodes[currentTargetNode - 1], spline.nodes[currentTargetNode]);
-
-        Debug.Log(transition);
-        transform.LookAt(spline.nodes[currentTargetNode]);*/
-
-
-        //rotation update every (rotateEvery) points, using point (rotateEvery) points forward
         Quaternion currentRotation = transform.rotation;
 
         Vector3 targetDir = spline.nodes[currentTargetNode + rotateEvery] - transform.position;
