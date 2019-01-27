@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Title.unity
     guid: d26dae5d07a5e7244ba83cb515c7f9d0
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Turm.unity
     guid: aaaa7d8cbaf30f94da48f5d9d8212e88
+  - enabled: 1
+    path: Assets/Scenes/TurmLiegend.unity
+    guid: e0a366304c5fa454b88e2dbb6f439d23
   m_configObjects: {}
