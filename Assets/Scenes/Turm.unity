@@ -2109,32 +2109,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 556406190}
   m_Mesh: {fileID: 4300014, guid: 75e43e5be2b083340b80662bfef2e310, type: 3}
---- !u!21 &581382847
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Additive
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors:
-    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &625565800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,7 +2429,7 @@ LineRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 581382847}
+  - {fileID: 1667677166}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8095,6 +8069,7 @@ GameObject:
   - component: {fileID: 1015517367}
   - component: {fileID: 1015517366}
   - component: {fileID: 1015517368}
+  - component: {fileID: 1015517369}
   m_Layer: 0
   m_Name: feuer_teil2
   m_TagString: Untagged
@@ -8114,7 +8089,7 @@ Transform:
   m_LocalScale: {x: 0.47790602, y: 0.47790602, z: 0.47790602}
   m_Children: []
   m_Father: {fileID: 1355013726}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1015517366
 MeshRenderer:
@@ -8178,6 +8153,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1015517369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015517364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64f7e8b762bc62c4387a865c6a4374c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opaqueMaterial: {fileID: 2100000, guid: f4e2b4b477eff1e4fa8d855e9be4e67a, type: 2}
 --- !u!1 &1021974076
 GameObject:
   m_ObjectHideFlags: 0
@@ -8678,32 +8665,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1129872688}
   m_Mesh: {fileID: 4300034, guid: 75e43e5be2b083340b80662bfef2e310, type: 3}
---- !u!21 &1138128810
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Additive
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors:
-    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1001 &1147638596
 Prefab:
   m_ObjectHideFlags: 0
@@ -8834,6 +8795,7 @@ GameObject:
   - component: {fileID: 1167513479}
   - component: {fileID: 1167513478}
   - component: {fileID: 1167513480}
+  - component: {fileID: 1167513481}
   m_Layer: 0
   m_Name: torch
   m_TagString: Untagged
@@ -8917,6 +8879,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1167513481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1167513476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64f7e8b762bc62c4387a865c6a4374c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opaqueMaterial: {fileID: 2100000, guid: a0bcede4cf05d3d41855977cacc83873, type: 2}
 --- !u!1001 &1174483499
 Prefab:
   m_ObjectHideFlags: 0
@@ -8970,7 +8944,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1138128810}
+      objectReference: {fileID: 1569017093}
     - target: {fileID: 120812735927585276, guid: f493bd6657be89d42933a8ce0bcf30b0,
         type: 2}
       propertyPath: m_Positions.Array.data[0].x
@@ -14404,6 +14378,7 @@ Transform:
   - {fileID: 1561657378}
   - {fileID: 1167513477}
   - {fileID: 84961352}
+  - {fileID: 2128440147}
   - {fileID: 2084583871}
   - {fileID: 1015517365}
   m_Father: {fileID: 103516230}
@@ -19603,6 +19578,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f7e8b762bc62c4387a865c6a4374c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  opaqueMaterial: {fileID: 2100000, guid: 908c85d8879bf8046a8cd75b9e50fd43, type: 2}
+--- !u!21 &1569017093
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Additive
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors:
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &1569556639
 GameObject:
   m_ObjectHideFlags: 0
@@ -24675,6 +24677,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1658191612}
   m_Mesh: {fileID: 4300036, guid: 75e43e5be2b083340b80662bfef2e310, type: 3}
+--- !u!21 &1667677166
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Additive
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors:
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &1671461005
 GameObject:
   m_ObjectHideFlags: 0
@@ -30649,7 +30677,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 94c70d431fdf0c9469f66916b1825a2b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94c70d431fdf0c9469f66916b1825a2b, type: 3}
       propertyPath: m_LocalScale.x
@@ -35386,6 +35414,103 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: -449.05, y: -90.00101, z: -89.998}
+--- !u!1 &2128440145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2128440147}
+  - component: {fileID: 2128440146}
+  - component: {fileID: 2128440149}
+  - component: {fileID: 2128440148}
+  m_Layer: 0
+  m_Name: fireLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &2128440146
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128440145}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0.5385111, b: 0.3066038, a: 1}
+  m_Intensity: 0
+  m_Range: 57.654938
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &2128440147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128440145}
+  m_LocalRotation: {x: -0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.064648, y: 12.277738, z: 38.371933}
+  m_LocalScale: {x: 0.99093884, y: 0.99093884, z: 0.99093884}
+  m_Children: []
+  m_Father: {fileID: 1355013726}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2128440148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128440145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d676a4461af2b468a3280e06d03cf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &2128440149
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128440145}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: accbd4cf4dc067c42a7cc541f5ffa0ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2130637212
 GameObject:
   m_ObjectHideFlags: 0

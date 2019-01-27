@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class handleAnimationFinish : MonoBehaviour {
 
+    public Material opaqueMaterial;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,6 +18,9 @@ public class handleAnimationFinish : MonoBehaviour {
 
     public void finishFadeIn()
     {
-       
+        Debug.Log("anim finish");
+        transform.parent.gameObject.GetComponentInChildren<lightFire>().LightFire();
+
+        GetComponent<Renderer>().material = opaqueMaterial;
     }
 }
