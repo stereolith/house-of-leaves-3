@@ -33,6 +33,11 @@ public class LookSelect : MonoBehaviour {
                 timeOnTarget = 0f;
                 UpdateProgressCircle();
                 StopEmission(hit);
+                if(hit.transform.gameObject.GetComponent<InteractionTarget>() != null)
+                {
+                    hit.transform.gameObject.GetComponent<InteractionTarget>().Selected();
+                    return null;
+                }
                 return hit.transform.gameObject;
             }
         }
