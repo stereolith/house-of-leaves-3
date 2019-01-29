@@ -68,6 +68,14 @@ public class PlayerMove : MonoBehaviour {
                 }
 
                 changeScene = target.GetComponent<WalkTarget>().getChangeScene();
+                if(changeScene)
+                {
+                    Debug.Log("change scene");
+                    {
+                        GameObject.Find("LevelChanger").GetComponent<LevelChanger>().NextScene();
+                        Debug.Log(GameObject.Find("LevelChanger"));
+                    }
+                }
 
                 Hermite_Spline bike_path = target.GetComponent<WalkTarget>().getBike_path();
                 GameObject bike = target.GetComponent<WalkTarget>().getBike();
@@ -88,14 +96,9 @@ public class PlayerMove : MonoBehaviour {
         Vector3 targetPos = target.position;
         targetPos.y = transform.parent.position.y;
         transform.parent.position = Vector3.MoveTowards(transform.parent.position, targetPos, moveStep);
-        if (Vector3.Distance(transform.parent.position, targetPos) < 2)
+        if (Vector3.Distance(transform.parent.position, targetPos) < 2.0)
         {
-            Debug.Log("<2");
-            if (changeScene)
-            {
-                GameObject.Find("LevelChanger").GetComponent<LevelChanger>().NextScene();
-                Debug.Log(GameObject.Find("LevelChanger"));
-            }
+            Debug.Log("Stop walking");
             animator.Play("Idle");
             return false;
         }

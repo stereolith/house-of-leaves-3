@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Turm.unity
     guid: aaaa7d8cbaf30f94da48f5d9d8212e88
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TurmLiegend.unity
     guid: e0a366304c5fa454b88e2dbb6f439d23
   m_configObjects: {}

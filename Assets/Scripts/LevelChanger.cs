@@ -8,13 +8,15 @@ public class LevelChanger : MonoBehaviour {
     public Animator an_top;
     public Animator an_bot;
 
+    public bool rightMouseToAdvance = false;
+
     private int levelToLoad;
 
     void Update ()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(1) && rightMouseToAdvance)
         {
-            //FadeToLevel(0);
+            FadeToLevel(0);
         }
     }
 	
