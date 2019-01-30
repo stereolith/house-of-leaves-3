@@ -15,9 +15,9 @@ public class PlayerMove : MonoBehaviour {
     private bool path = false;
     private Hermite_Spline spline = null;
     private int currentTargetNode = 0;
-    public float pathWalkSpeed = 50;
+    public float pathWalkSpeed = 25;
     public float rotateSpeed = 6;
-    public int rotateEvery = 5;
+    public int rotateEvery = 1;
     private bool isCompleted;
     private float transition;
     Vector3 newDir;
