@@ -30,7 +30,11 @@ public class PlayerMove : MonoBehaviour {
 
     void Update()
     {
-        if(!isWalking)
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+        if (!isWalking)
         {
 
             if(path)
@@ -104,6 +108,7 @@ public class PlayerMove : MonoBehaviour {
         transform.parent.position = Vector3.MoveTowards(transform.parent.position, targetPos, moveStep);
         if (Vector3.Distance(transform.parent.position, targetPos) < 2.0)
         {
+            currentTargetNode = 0;
             Debug.Log("Stop walking");
             animator.Play("Idle");
             return false;
@@ -137,6 +142,8 @@ public class PlayerMove : MonoBehaviour {
         float rotateStep = rotateSpeed * Time.deltaTime;
 
         Quaternion lastRotation = transform.parent.rotation;
+
+        Debug.Log(currentTargetNode);
 
         //position
         transform.parent.position = Vector3.MoveTowards(transform.parent.position, spline.nodes[currentTargetNode], moveStep);

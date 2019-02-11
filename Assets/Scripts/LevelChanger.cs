@@ -18,6 +18,10 @@ public class LevelChanger : MonoBehaviour {
         {
             FadeToLevel(0);
         }
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 	
     public void NextScene()

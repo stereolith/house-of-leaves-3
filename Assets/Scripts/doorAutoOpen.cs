@@ -19,6 +19,7 @@ public class doorAutoOpen : MonoBehaviour {
 	void Update () {
         if (boxCollider.bounds.Contains(playerTransform.position))
         {
+            Debug.Log("collide");
             anim.SetTrigger("open_door");
         }
     }
