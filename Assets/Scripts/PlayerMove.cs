@@ -59,6 +59,12 @@ public class PlayerMove : MonoBehaviour {
 
 
                 Hermite_Spline walk_path = target.GetComponent<WalkTarget>().getWalk_path();
+                if(target.GetComponent<WalkTarget>().getPathSpeed() != 0)
+                {
+                    Debug.Log("path speed set to ");
+                    Debug.Log(target.GetComponent<WalkTarget>().getPathSpeed());
+                    pathWalkSpeed = target.GetComponent<WalkTarget>().getPathSpeed();
+                }
                 if (walk_path != null)
                 {
                     path = true;

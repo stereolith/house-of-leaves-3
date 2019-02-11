@@ -7,6 +7,7 @@ public class WalkTarget : MonoBehaviour {
     public Hermite_Spline bike_path = null;
     public GameObject bike = null;
     public Hermite_Spline walk_path = null;
+    public int path_speed = 0;
     public bool changeScene = false;
 
     public Transform GetTarget()
@@ -28,5 +29,9 @@ public class WalkTarget : MonoBehaviour {
     public bool getChangeScene()
     {
        return changeScene;
+    }
+    public int getPathSpeed()
+    {
+        return path_speed;
     }
 }
