@@ -5,7 +5,7 @@
 Mitglieder der Projektgruppe: Kim Roland, Lukas Mönch, Anna Casters.
 
 ### Projektidee 
-Bei *LeafReality* handelt es sich um eine VR-Installation. Sie beschäftigt sich mit Mark. Z. Danielewskis alternativen Raumkonzepten. Ausgewählte Teile seines **House of Leaves** wurden nach eigener Interpretation in einer virtuellen Umgebung umgesetzt, um die Erkundungstour des Hauptcharakters Navidson erlebbar zu machen. Das Hauptaugenmerk der **Medientransformation** richtet sich dabei auf die Transmediation, also die inhaltsbasierte Übertragung der Narration und
+Bei *LeafReality* handelt es sich um eine VR-Installation. Sie beschäftigt sich mit Mark. Z. Danielewskis alternativen Raumkonzepten. Ausgewählte Teile seines **House of Leaves** wurden nach eigener Interpretation in einer virtuellen Umgebung umgesetzt, um die Erkundungstour des Hauptcharakters Navidson erlebbar zu machen. Das Hauptaugenmerk der **Medientransformation** richtet sich dabei auf die Transmediation, also die inhaltsbasierte Übertragung der Narration und die Abbildung einer Eigeninterpretation *virtual space* (Elleström) durch 3D-Modelle.
 
 ### Umsetzung
 Zur Orientierung und Bewegung im dreidimensionalen Raum der Projektanwendung wurde ein *Reticle Pointer* selbst entwickelt, durch den die UserInnen mit der virtuellen Umgebung und ihren Objekten interagieren können. 
