@@ -7,7 +7,7 @@ Mitglieder der Projektgruppe: Kim Roland, Lukas Mönch, Anna Casters.
 ### Projektidee 
 Bei *LeafReality* handelt es sich um eine VR-Installation. Sie beschäftigt sich mit Mark. Z. Danielewskis alternativen Raumkonzepten. Ausgewählte Teile seines **House of Leaves** wurden nach eigener Interpretation in einer virtuellen Umgebung umgesetzt, um die Erkundungstour des Hauptcharakters Navidson erlebbar zu machen. Das Hauptaugenmerk der **Medientransformation** richtet sich dabei auf die Transmediation, also die inhaltsbasierte Übertragung der Narration und die Abbildung einer Eigeninterpretation *virtual space* (Elleström) durch 3D-Modelle.
 
-<img src="Screenshots/TowerScene.png" width="400"> <img src="Screenshots/SpiralStairs.png" width="400">
+<img src="Screenshots/LeafReality.png">
 
 ### Umsetzung
 Zur Orientierung und Bewegung im dreidimensionalen Raum der Projektanwendung wurde ein *Reticle Pointer* selbst entwickelt, durch den die UserInnen mit der virtuellen Umgebung und ihren Objekten interagieren können. 
@@ -15,9 +15,9 @@ Dieser Pointer ist permanent in das User-Sichtfeld integriert und dient zur Ausw
 
 Insgesamt kann sich der Spieler innerhalb der virtuellen Umgebung immer frei umschauen und bekommt durch die *interaction targets* Hinweise zur Orientierung sowie verschiedene Möglichkeiten zur Interaktion und Fortbewegung. 
 
+<img src="Screenshots/sleep.gif">
+
 ### Verwendete Technologien
 Im Rahmen der technischen Umsetzung wurde verschiedene Software genutzt. Die Modelle zur Raumdarstellung wurden in **3ds Max** modelliert; darüber hinaus wurden einzelne Objekte mit **MagicaVoxel** erstellt. Diese sollen sich durch ihren besonderen Stil von der restlichen Umgebung abheben, da sie wichtige Gegenstände innerhalb der Geschichte darstellen. 
 
 Mithilfe der Game-Engine **Unity** wurden alle Objekte mit den entsprechenden Animationen und dazugehörigen Skripten verknüpft, um die beschriebene interaktive VR-Welt zu entwickeln. Außerdem wurden open-source zugängliche [3D-Texturen](https://3dtextures.me) genutzt, um das Gefühl von Dreidimensionalität innerhalb der VR-Umgebung und während der Erkundung des *House of Leaves* zu unterstützen.
-
-
