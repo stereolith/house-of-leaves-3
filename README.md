@@ -1,13 +1,13 @@
 # VR-Projekt *Leaf Reality*
 
-*LeafReality* entstand im Rahmen der AM2-Übung [Media Transformation – Interaktives Erzählen in VR](http://lehre.idh.uni-koeln.de/lehrveranstaltungen/wisem18/media-transformation-interaktives-erzahlen-in-vr/) im Wintersemester 2018/2019, eine Veranstaltung des Instituts für Digital Humanitites der Universität zu Köln. 
+*LeafReality* entstand im Rahmen der AM2-Übung [Media Transformation – Interaktives Erzählen in VR](http://lehre.idh.uni-koeln.de/lehrveranstaltungen/wisem18/media-transformation-interaktives-erzahlen-in-vr/) im Wintersemester 2018/2019, einer Veranstaltung des Instituts für Digital Humanitites der Universität zu Köln. 
 
 Mitglieder der Projektgruppe: Kim Roland, Lukas Mönch, Anna Casters.
 
 ### Projektidee 
 Bei *LeafReality* handelt es sich um eine VR-Installation. Sie beschäftigt sich mit Mark. Z. Danielewskis alternativen Raumkonzepten. Ausgewählte Teile seines **House of Leaves** wurden nach eigener Interpretation in einer virtuellen Umgebung umgesetzt, um die Erkundungstour des Hauptcharakters Navidson erlebbar zu machen. Das Hauptaugenmerk der **Medientransformation** richtet sich dabei auf die Transmediation, also die inhaltsbasierte Übertragung der Narration und die Abbildung einer Eigeninterpretation *virtual space* (Elleström) durch 3D-Modelle.
 
-<img src="Screenshots/TowerScene.png" width="500">
+<img src="Screenshots/TowerScene.png" width="400"> <img src="Screenshots/SpiralStairs.png" width="400">
 
 ### Umsetzung
 Zur Orientierung und Bewegung im dreidimensionalen Raum der Projektanwendung wurde ein *Reticle Pointer* selbst entwickelt, durch den die UserInnen mit der virtuellen Umgebung und ihren Objekten interagieren können. 
