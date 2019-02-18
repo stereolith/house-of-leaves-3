@@ -83,7 +83,6 @@ public class PlayerMove : MonoBehaviour {
                     Debug.Log("change scene");
                     {
                         GameObject.Find("LevelChanger").GetComponent<LevelChanger>().NextScene();
-                        Debug.Log(GameObject.Find("LevelChanger"));
                     }
                 }
 

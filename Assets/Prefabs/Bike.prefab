@@ -388,6 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spline: {fileID: 0}
+  moving: 0
   moveSpeed: 80
   rotateSpeed: 3
   rotateEvery: 5

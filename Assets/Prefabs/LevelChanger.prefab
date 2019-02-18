@@ -170,7 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb09ed5c9469a5949a27cb06e304103a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 95907984105721264}
+  an_top: {fileID: 0}
+  an_bot: {fileID: 0}
+  rightMouseToAdvance: 0
 --- !u!222 &222759921351123840
 CanvasRenderer:
   m_ObjectHideFlags: 1

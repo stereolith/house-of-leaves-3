@@ -106,7 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb09ed5c9469a5949a27cb06e304103a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 95887562018117414}
+  an_top: {fileID: 0}
+  an_bot: {fileID: 0}
+  rightMouseToAdvance: 0
 --- !u!114 &114666616615180444
 MonoBehaviour:
   m_ObjectHideFlags: 1
