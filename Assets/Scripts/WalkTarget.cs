@@ -34,4 +34,8 @@ public class WalkTarget : MonoBehaviour {
     {
         return path_speed;
     }
+    public void deactivateSelf()
+    {
+        gameObject.SetActive(false);
+    }
 }

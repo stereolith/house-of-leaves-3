@@ -27,7 +27,16 @@ public class LevelChanger : MonoBehaviour {
     public void NextScene()
     {
         Debug.Log("next scene");
-        FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log(SceneManager.sceneCountInBuildSettings);
+        Debug.Log(SceneManager.GetActiveScene().buildIndex);
+        if (SceneManager.sceneCountInBuildSettings == SceneManager.GetActiveScene().buildIndex + 1)
+        {
+            FadeToLevel(1);
+        }
+        else
+        {
+            FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     public void FadeToLevel(int levelIndex)

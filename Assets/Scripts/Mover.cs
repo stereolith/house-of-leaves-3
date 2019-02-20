@@ -7,6 +7,9 @@ public class Mover : MonoBehaviour
 
     public Hermite_Spline spline;
     public bool moving = false;
+    public bool goToFootOnFinish = true;
+    public bool changeSceneOnFinish = false;
+    public GameObject toInstantiate;
 
     private int currentTargetNode = 1;
     public float moveSpeed = 50;
@@ -47,6 +50,20 @@ public class Mover : MonoBehaviour
         if(currentTargetNode == spline.nodes.Count)
         {
             spline = null;
+            isCompleted = true;
+            Debug.Log("bike path end reached");
+            if(changeSceneOnFinish)
+            {
+                GameObject.Find("LevelChanger").GetComponent<LevelChanger>().NextScene();
+            }
+            if(goToFootOnFinish)
+            {
+                Instantiate(toInstantiate, transform.position, transform.rotation);
+                transform.Find("first-person").gameObject.SetActive(false);
+                GameObject.Find("Player(Clone)").gameObject.SetActive(true);
+                Debug.Log("goToFootOnFinish");
+                Debug.Log(transform.Find("first-person"));
+            }
         }
         float moveStep = moveSpeed * Time.deltaTime;
         float rotateStep = rotateSpeed * Time.deltaTime;

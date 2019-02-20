@@ -11,6 +11,7 @@ public class PlayerMove : MonoBehaviour {
     private Animator animator;
     private LookSelect lookSelect;
     private bool changeScene = false;
+    public bool deactivateOnSelect = true;
 
     private bool path = false;
     private Hermite_Spline spline = null;
@@ -93,6 +94,10 @@ public class PlayerMove : MonoBehaviour {
                     Debug.Log("Bike and path detected");
                     gameObject.SetActive(false);
                     bike.GetComponent<Mover>().setMoving(true);
+                }
+                if(deactivateOnSelect)
+                {
+                    target.GetComponent<WalkTarget>().deactivateSelf();
                 }
             }
         }
