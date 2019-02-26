@@ -58,12 +58,19 @@ public class Mover : MonoBehaviour
             }
             if(goToFootOnFinish)
             {
-                Instantiate(toInstantiate, transform.position, transform.rotation);
-                transform.Find("first-person").gameObject.SetActive(false);
-                GameObject.Find("Player(Clone)").gameObject.SetActive(true);
+                //Instantiate(toInstantiate, transform.position, transform.rotation);
+                //GameObject.Find("first-person").gameObject.SetActive(false);
+                GameObject player = GameObject.Find("Player");
+                player.transform.position = transform.position;
+                player.transform.position = new Vector3(player.transform.position.x - 10, player.transform.position.y, player.transform.position.z);
+                player.GetComponentInChildren<Camera>().enabled = true;
+                //GameObject.Find("Player(Clone)").get
+                //GameObject.Find("Player(Clone)/Camera").gameObject.SetActive(true);
+
                 Debug.Log("goToFootOnFinish");
-                Debug.Log(transform.Find("first-person"));
+
             }
+            return;
         }
         float moveStep = moveSpeed * Time.deltaTime;
         float rotateStep = rotateSpeed * Time.deltaTime;

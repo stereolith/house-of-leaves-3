@@ -92,7 +92,7 @@ public class PlayerMove : MonoBehaviour {
                 if (bike_path != null && bike != null)
                 {
                     Debug.Log("Bike and path detected");
-                    gameObject.SetActive(false);
+                    GetComponent<Camera>().enabled = false;
                     bike.GetComponent<Mover>().setMoving(true);
                 }
                 if(deactivateOnSelect)
