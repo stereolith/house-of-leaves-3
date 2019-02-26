@@ -40,7 +40,7 @@ public class PlayerMove : MonoBehaviour {
 
             if(path)
             {
-                Debug.Log(spline.nodes[0]);
+                //Debug.Log(spline.nodes[0]);
                 WalkAlongPath();
             }
             GameObject hit = lookSelect.RaycastSelect();
@@ -147,7 +147,7 @@ public class PlayerMove : MonoBehaviour {
 
         Quaternion lastRotation = transform.parent.rotation;
 
-        Debug.Log(currentTargetNode);
+        //Debug.Log(currentTargetNode);
 
         //position
         transform.parent.position = Vector3.MoveTowards(transform.parent.position, spline.nodes[currentTargetNode], moveStep);
