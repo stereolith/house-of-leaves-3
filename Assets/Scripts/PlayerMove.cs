@@ -79,7 +79,7 @@ public class PlayerMove : MonoBehaviour {
                 }
 
                 changeScene = target.GetComponent<WalkTarget>().getChangeScene();
-                if(changeScene)
+                if(changeScene && walk_path == null)
                 {
                     Debug.Log("change scene");
                     {
@@ -138,6 +138,10 @@ public class PlayerMove : MonoBehaviour {
     {
         if(currentTargetNode == spline.nodes.Count)
         {
+            if(target.GetComponent<WalkTarget>().getChangeScene())
+            {
+                GameObject.Find("LevelChanger").GetComponent<LevelChanger>().NextScene();
+            }
             spline = null;
             path = false;
         }

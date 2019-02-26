@@ -303,7 +303,7 @@ LineRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 1487620686}
+  - {fileID: 749591544}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -607,6 +607,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 965287176}
+--- !u!1001 &656617961
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224937247825856590, guid: 34557f63d8230b2478dcf54cb20a2bd8,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855227001437262, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 240.58414
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855227001437262, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 109.680046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855227001437262, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2422.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855227001437262, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855227001437262, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855227001437262, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855227001437262, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855227001437262, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197590212369938, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+      propertyPath: m_Name
+      value: LevelChanger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34557f63d8230b2478dcf54cb20a2bd8, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!21 &749591544
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Additive
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors:
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &916209210
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,32 +1042,6 @@ Transform:
   m_Father: {fileID: 1290589535}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!21 &1487620686
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Additive
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors:
-    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &1683346244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,7 +1226,7 @@ MonoBehaviour:
   bike: {fileID: 0}
   walk_path: {fileID: 328386660}
   path_speed: 0
-  changeScene: 0
+  changeScene: 1
 --- !u!65 &1744565825
 BoxCollider:
   m_ObjectHideFlags: 0
