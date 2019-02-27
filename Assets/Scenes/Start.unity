@@ -4824,8 +4824,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 22.041023, y: 12.674891, z: 35.477222}
-  m_Center: {x: -1.3791016e-19, y: -1.099918e-14, z: 3.5479977}
+  m_Size: {x: 22.041021, y: 29.831549, z: 35.477222}
+  m_Center: {x: -1.9252061e-10, y: -1.4135985, z: 3.5479968}
 --- !u!4 &154870438
 Transform:
   m_ObjectHideFlags: 0
@@ -4833,13 +4833,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 154870433}
-  m_LocalRotation: {x: -0.7180529, y: 0.0037757552, z: -0.00011576169, w: -0.69597834}
-  m_LocalPosition: {x: -251.01, y: 27.337, z: -513.07}
+  m_LocalRotation: {x: -0.7094832, y: 0.0037768893, z: -0.00006955324, w: -0.7047123}
+  m_LocalPosition: {x: -251, y: 27.4, z: -512.3}
   m_LocalScale: {x: 1.5667578, y: 1.5667578, z: 1.5667578}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: -271.813, y: -170.744, z: -170.42801}
+  m_LocalEulerAnglesHint: {x: -270.489, y: -142.306, z: -141.99501}
 --- !u!1 &171080035
 GameObject:
   m_ObjectHideFlags: 0
@@ -9690,7 +9690,7 @@ LineRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 834050713}
+  - {fileID: 1400104714}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10046,32 +10046,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!21 &834050713
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Additive
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors:
-    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1001 &1004539111
 Prefab:
   m_ObjectHideFlags: 0
@@ -10363,6 +10337,32 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!21 &1400104714
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Additive
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors:
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &1425955728
 GameObject:
   m_ObjectHideFlags: 0
