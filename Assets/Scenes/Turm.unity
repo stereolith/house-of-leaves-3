@@ -734,32 +734,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4762778790415514, guid: de282ebc9e1f88c439890ef400c48753,
     type: 2}
   m_PrefabInternal: {fileID: 1543677078}
---- !u!21 &195871480
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Particles/Additive
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _InvFade: 1
-    m_Colors:
-    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &282760203
 GameObject:
   m_ObjectHideFlags: 0
@@ -12448,8 +12422,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 22.041023, y: 12.674891, z: 35.477222}
-  m_Center: {x: -1.3791016e-19, y: -1.099918e-14, z: 3.5479977}
+  m_Size: {x: 22.041023, y: 12.85536, z: 35.477222}
+  m_Center: {x: -1.1517154e-13, y: -0.09023381, z: 3.5479987}
 --- !u!4 &1370375083
 Transform:
   m_ObjectHideFlags: 0
@@ -12458,7 +12432,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1370375079}
   m_LocalRotation: {x: -0.70710677, y: 0.0000061392793, z: -0.0000061392793, w: -0.70710677}
-  m_LocalPosition: {x: -87.6, y: 64.1, z: -487.1}
+  m_LocalPosition: {x: -87.6, y: 58.6, z: -483.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17762,7 +17736,7 @@ LineRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 195871480}
+  - {fileID: 2114326398}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18264,11 +18238,19 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 982d0c1efbb95d44e8557d5679a0ab2e, type: 2}
     - target: {fileID: 4895798996644454, guid: baa614f581455374180cb3ba4437a08f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.14
+      value: -0.014
       objectReference: {fileID: 0}
     - target: {fileID: 4895798996644454, guid: baa614f581455374180cb3ba4437a08f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.19
+      value: 0.058
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164277258365466, guid: baa614f581455374180cb3ba4437a08f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.271
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895798996644454, guid: baa614f581455374180cb3ba4437a08f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.308
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa614f581455374180cb3ba4437a08f, type: 2}
@@ -19197,7 +19179,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2099280530}
   m_LocalRotation: {x: -0.000000029802322, y: -0.000000029802322, z: 0.30131257, w: 0.9535254}
-  m_LocalPosition: {x: 11.441474, y: -5.8318453, z: 10.300399}
+  m_LocalPosition: {x: 6.9, y: -7.2, z: 10.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1973764290}
@@ -19215,6 +19197,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20, y: 20, z: 20}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!21 &2114326398
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Particles/Additive
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _InvFade: 1
+    m_Colors:
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1 &2115883163
 GameObject:
   m_ObjectHideFlags: 0
